@@ -1,0 +1,46 @@
+//inner join
+SELECT * from employees emp
+INNER JOIN departments dep
+ON emp.department_id = dep.department_id;
+
+//left join
+SELECT * FROM employees emp
+LEFT JOIN departments dep
+ON emp.department_id = dep.department_id;
+
+//right join
+SELECT * FROM employees emp
+RIGHT JOIN departments dep
+ON emp.department_id = dep.department_id;
+
+//full join
+SELECT * FROM employees emp
+FULL JOIN departments dep
+ON emp.department_id = dep.department_id;
+
+//cross join(cartesian product)
+SELECT * FROM employees
+CROSS JOIN departments;
+
+//natural join(Common columns are columns that have the same name in both tables. There is no need to specify the column names to join. The resulting table will not contain any repeated columns.)
+SELECT * FROM employees
+NATURAL JOIN departments;
+
+
+//outer joins
+
+//left outer join
+SELECT * FROM employees emp
+LEFT OUTER JOIN departments dep
+ON emp.department_id = dep.department_id;
+
+//right outer join
+SELECT * FROM employees emp
+RIGHT OUTER JOIN departments dep
+ON emp.department_id = dep.department_id;
+
+//full outer join
+SELECT * FROM employees emp
+FULL OUTER JOIN departments dep
+ON emp.department_id = dep.department_id;
+
